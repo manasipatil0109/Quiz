@@ -4,7 +4,6 @@ const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 
-
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo");
 }
@@ -92,6 +91,7 @@ function showQuetions(index)
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
+
 let tickIconTag = '';
 let crossIconTag = '';
 
@@ -181,6 +181,7 @@ function startTimer(time)
         }
     }
 }
+
 function queCounter(index)
 {
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
